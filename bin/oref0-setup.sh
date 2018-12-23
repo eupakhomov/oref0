@@ -692,7 +692,7 @@ if prompt_yn "" N; then
         (cd $HOME/src/oref0 && git fetch && git pull) || die "Couldn't pull latest oref0"
     else
         echo -n "Cloning oref0: "
-        (cd $HOME/src && git clone git://github.com/openaps/oref0.git) || die "Couldn't clone oref0"
+        (cd $HOME/src && git clone git://github.com/eupakhomov/oref0.git) || die "Couldn't clone oref0"
     fi
     # install/upgrade to latest node 8 if neither node 8 nor node 10+ LTS are installed
     if ! nodejs --version | grep -e 'v8\.' -e 'v1[02468]\.' ; then
